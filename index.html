@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>WeatherScope</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">WeatherScope</p>
+        <h1>Track current weather and the next few days in one view.</h1>
+        <p class="lead">
+          Search any city to see live conditions, a compact forecast, and a clean dashboard that does not require an API key.
+        </p>
+
+        <form class="search-bar" id="searchForm" autocomplete="off">
+          <label class="sr-only" for="cityInput">City</label>
+          <input id="cityInput" name="city" type="text" placeholder="Try London, Nairobi, or Tokyo" />
+          <button type="submit">Search</button>
+        </form>
+
+        <div class="status-row">
+          <span id="statusText">Loading forecast for London...</span>
+        </div>
+      </section>
+
+      <section class="dashboard">
+        <article class="panel current-panel">
+          <div class="panel-header">
+            <div>
+              <p class="panel-kicker">Current conditions</p>
+              <h2 id="locationName">London</h2>
+              <p id="localTime" class="muted">--</p>
+            </div>
+            <div class="temp-block">
+              <span id="currentTemp">--</span>
+              <span class="deg">°C</span>
+            </div>
+          </div>
+
+          <div class="conditions">
+            <p id="weatherDescription">Waiting for data...</p>
+            <p class="muted" id="weatherMeta">Feels like --°C</p>
+          </div>
+
+          <div class="metric-grid">
+            <div class="metric-card">
+              <span>Wind</span>
+              <strong id="windSpeed">--</strong>
+            </div>
+            <div class="metric-card">
+              <span>Humidity</span>
+              <strong id="humidity">--</strong>
+            </div>
+            <div class="metric-card">
+              <span>Pressure</span>
+              <strong id="pressure">--</strong>
+            </div>
+            <div class="metric-card">
+              <span>Visibility</span>
+              <strong id="visibility">--</strong>
+            </div>
+          </div>
+        </article>
+
+        <aside class="panel forecast-panel">
+          <div class="panel-header compact">
+            <div>
+              <p class="panel-kicker">Forecast</p>
+              <h2>Next 5 days</h2>
+            </div>
+          </div>
+          <div id="forecastList" class="forecast-list"></div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

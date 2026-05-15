@@ -1,0 +1,16 @@
+{
+  "name": "weather-scope",
+  "version": "1.0.0",
+  "description": "A lightweight weather dashboard built with static HTML, CSS, and JavaScript.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "weather",
+    "dashboard",
+    "open-meteo"
+  ],
+  "author": "",
+  "license": "MIT"
+}
