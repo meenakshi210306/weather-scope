@@ -1,17 +1,47 @@
-# WeatherScope
+# 🌤️ WeatherScope
 
-WeatherScope is a lightweight weather dashboard that uses plain HTML, CSS, and JavaScript with a tiny Node.js static server.
+A lightweight weather dashboard built with plain HTML, CSS, and JavaScript.
+Powered by the Open-Meteo API — no API key required.
 
-## Run
+![WeatherScope Screenshot](assets/images/preview.png)
 
-```bash
+## ✨ Features
+
+- 🔍 Search weather by city name
+- 🌡️ Current temperature, humidity, wind speed
+- 📅 7-day forecast
+- 📱 Fully responsive design
+
+## 🛠️ Tech Stack
+
+- HTML5, CSS3, Vanilla JavaScript
+- Node.js (static file server)
+- [Open-Meteo API](https://open-meteo.com/)
+
+## 🚀 Getting Started
+
+\`\`\`bash
+git clone https://github.com/meenakshi210306/WeatherScope.git
+cd WeatherScope
+npm install
 npm start
-```
+\`\`\`
 
-Then open `http://localhost:3000`.
+Then open http://localhost:3000
 
-## Notes
+## 📁 Project Structure
 
-- No API key is required.
-- Weather data comes from Open-Meteo endpoints.
-- The `assets/icons` and `assets/images` folders are included for future media.
+\`\`\`
+WeatherScope/
+├── index.html
+├── style.css
+├── script.js
+├── server.js
+└── assets/
+    ├── icons/
+    └── images/
+\`\`\`
+
+## 📄 License
+
+MIT © meenakshi210306
