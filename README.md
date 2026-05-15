@@ -3,6 +3,8 @@
 A lightweight weather dashboard built with plain HTML, CSS, and JavaScript.
 Powered by the Open-Meteo API — no API key required.
 
+🔗 **Live Demo:** [https://weather-scope-s12f.onrender.com](https://weather-scope-s12f.onrender.com)
+
 ![WeatherScope Screenshot](assets/images/preview.png)
 
 ## ✨ Features
@@ -20,18 +22,18 @@ Powered by the Open-Meteo API — no API key required.
 
 ## 🚀 Getting Started
 
-\`\`\`bash
-git clone https://github.com/meenakshi210306/WeatherScope.git
+```bash
+git clone https://github.com/meenakshi210306/weather-scope.git
 cd WeatherScope
 npm install
 npm start
-\`\`\`
+```
 
 Then open http://localhost:3000
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 WeatherScope/
 ├── index.html
 ├── style.css
@@ -40,7 +42,7 @@ WeatherScope/
 └── assets/
     ├── icons/
     └── images/
-\`\`\`
+```
 
 ## 📄 License
 
